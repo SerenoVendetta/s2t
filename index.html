@@ -3,266 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
-    
-    <title>Dev Burguer</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-  <!-- META TAG OG 
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Dev Burguer - O melhor Hamburguer dev!"/>
-    <meta property="og:image" content="http://127.0.0.1:5500/assets/hamb-1.png"/>
-    <meta property="og:description" content="O melhor Hamburguer de Luanda"/>
-    <meta property="og:site_name" content="DevBurguer"/>
--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Petisqueira</title>
 </head>
 <body>
+    <header>
+        <img src="img/logo (1).png" alt="fp">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Carros</li>
+                <li>Fale Connosco</li>
+            </ul>
+        </nav>
+    </header>
 
-    <!--Header-->
-<header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
-  <!--<img  src="assets/bg.png" alt="Burguer" class="w-full h-[420px] bg-zinc-900 bg-cover bg-center"/> -->
-  <div class="w-full h-full flex flex-col justify-center items-center">
-        <img src="assets/hamb-1.png"
-         alt="Logo DevBurguer"
-         class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
-        <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Dev Burguer</h1>
-    
-        <span class="text-white font-medium">Rua Americo Boa Vida - Ingombota</span>
-    
-        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-            <span>Seg a Dom - 18:00 as 22:00</span>
-
-        </div>
-    </div>
-</header>
-    <!--Fim Header-->
-
-    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
-        Conheça nosso menu
-    </h2>
-    
-     <!--Inicio Main-->
-     <div id="menu">
-
-        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
-
-             <!--Produto Item-->
-             <div class="flex gap-2">
-                <img src="/assets/hamb-1.png" alt="Hamburguer Smash"
-                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+   <section class="container">
+        <div class="list">
             
-                <div>
-                    <p class="font-bold">Hamburguer Smash </p>
-                    <p class="text-sm"> Pão com sabor inesquecivel de alta qualidade,
-                    Queijo, Fiambre Chourição e molhos tropicais</p>
-                    
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">kz 2000 </p>
-                        <button 
-                        class="hover:bg-green-600 bg-black px-5 rounded add-to-cart-btn"
-                        data-name="Hamburguer Smash"
-                        data-price="2000"
-                        >
-                        
-                        <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
+            <div class="item active">
+                <div class="car-img">
+                     <img src="img/hb1.webp" alt="imagem carro">
                 </div>
-            </div>
-
-            <!--Produto Item-->
-            <div class="flex gap-2">
-                <img src="/assets/hamb-2.png" alt="Hamburguer Smash"
-                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-            
-                <div>
-                    <p class="font-bold">Hamburguer Duplo </p>
-                    <p class="text-sm"> Pão com sabor inesquecivel de alta qualidade,
-                    Queijo, Fiambre Chourição e molhos tropicais</p>
-                    
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">kz 3000 </p>
-                        <button 
-                        class="hover:bg-green-600 bg-black px-5 rounded add-to-cart-btn"
-                        data-name="Hamburguer Duplo"
-                        data-price="3000"
-                        >
-                        
-                        <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-                 <!--Produto Item-->
-                 <div class="flex gap-2">
-                    <img src="/assets/hamb-3.png" alt="Hamburguer Smash"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                 <div class="content">
+                    <p class="car-information">
+                    Sabor unico
+                    </p>
                 
-                    <div>
-                        <p class="font-bold ">Hamburguer Salad </p>
-                        <p class="text-sm"> Pão com sabor inesquecivel de alta qualidade,
-                        Queijo, Fiambre Chourição e molhos tropicais</p>
-                        
-                        <div class="flex items-center gap-2 justify-between mt-3">
-                            <p class="font-bold text-lg">kz 3500 </p>
-                            <button 
-                            class="hover:bg-green-600 bg-black px-5 rounded add-to-cart-btn"
-                            data-name="Hamburguer Salad"
-                            data-price="3500"
-                            >
-                            
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                     <!--Produto Item-->
-            <div class="flex gap-2">
-                <img src="/assets/hamb-4.png" alt="Hamburguer Combo"
-                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-            
-                <div>
-                    <p class="font-bold">Hamburguer da Casa </p>
-                    <p class="text-sm"> Pão com sabor inesquecivel de alta qualidade,
-                    Queijo, Fiambre Chourição e molhos tropicais</p>
-                    
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">kz 3500 </p>
-                        <button 
-                        class="hover:bg-green-600 bg-black px-5 rounded add-to-cart-btn"
-                        data-name="Hamburguer Combo"
-                        data-price="3500"
-                        >
-                        
-                        <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-<!--Fim do Produto Item-->
-
-        </main>
-
-        <div class="mx-auto max-w-7xl px-2 my-2">
-            <h2 class="text-2xl md:text-3xl font-bold mt-9 mb-6">
-                Bebidas
-            </h2>
-        </div>
-
-        <!--Grid de bebidas-->
-        
-                 <!--Produto Item-->
-     <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
-         <!--Produto Item-->
-         <div class="flex gap-2 w-full">
-            <img src="/assets/refri-1.png" alt="Coca-Cola"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-        
-            <div class="w-full">
-                <p class="font-bold text-white">Coca-Cola</p>
-                <p class="text-sm text-white"> O refrigerante a sua altura, refresca os teus dias
-                    quentes 
-                </p>
-                
-                <div class="flex items-center gap-2 justify-between mt-3">
-                    <p class="text-white font-bold text-lg">kz 500 </p>
-                    <button 
-                    class="hover:bg-green-600 bg-black px-5 rounded add-to-cart-btn"
-                    data-name="Coca-Cola"
-                    data-price="500"
-                    >
-                    
-                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                    <h2>Hamburguer</h2>
+                    <p class="description">
+                        Saboroso e suculento, com um toque de carne caramelizada e defumada.
+                        Os temperos e ingredientes adicionais complementam o sabor da carne e criam uma explosão de sabores na boca. 
+                    </p>
+                    <button class="information">
+                    Saiba Mais
                     </button>
-                </div>
             </div>
         </div>
 
-        <div class="flex gap-2 w-full">
-            <img src="/assets/refri-2.png" alt="Guarana"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-        
-            <div class="w-full">
-                <p class="font-bold text-white">Guarana</p>
-                <p class="text-sm text-white"> Bebida saborosa saúdavel, sem corantes nem 
-                    conservantes
+        <div class="item">
+            <div class="car-img">
+                 <img src="img/faita2.png" alt="imagem carro">
+            </div>
+             <div class="content">
+                <p class="car-information">
+                Sabor unico
                 </p>
-                
-                <div class="flex items-center gap-2 justify-between mt-3">
-                    <p class="text-white font-bold text-lg">kz 500 </p>
-                    <button 
-                    class="hover:bg-green-600 bg-black px-5 rounded add-to-cart-btn"
-                    data-name="Guarana"
-                    data-price="500"
-                    >
-                    
-                    <i class="fa fa-cart-plus text-lg text-white"></i>
-                    </button>
-                </div>
-            </div>
+            
+                <h2>Faita</h2>
+                <p class="description">
+                São conhecidas por seu sabor intenso e marcante, resultante da combinação de especiarias, carne grelhada e acompanhamentos frescos. A textura macia da carne contrasta com a crocância das tortilhas, criando uma experiência sensorial agradável. 
+                </p>
+                <button class="information">
+                Saiba Mais
+                </button>
         </div>
-<!--Fim do Produto Item-->
-                 
-            <!--Fim da grid de Bebidas-->
     </div>
-<!--Fim de Menu-->
 
-<!--Modal cart-->
-<div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
-id="cart-modal"
->
-
-    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
-        <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
-
-        <div id="cart-items" class="flex justify-between mb-2 flex-col max-h-[400px] overflow-auto"></div>
-
-        <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
-
-        <p class="font-bold mt-4">Endereço de Entrega:</p>
-        <input 
-        type="text"
-        placeholder="Digite o seu Endereço"
-        id="address"
-        class="w-full border-2 p-1 rounded my-1"
-        />
-
-        <p class="text-red-500 hidden" id="address-warn">Digite seu Endereço completo!</p>
-
-        <div class="flex items justify-between mt-5 w-full">
-            <button id="close-modal-btn" class="bg-green-500 px-4 py-1 rounded hover:bg-red-700">Fechar</button>
-            <button id="checkout-btn" class="bg-green-500 px-4 py-1 rounded hover:bg-red-700">Finalizar Pedido</button>
-
+    <div class="item">
+        <div class="car-img">
+             <img src="img/ch.jpg" alt="imagem carro">
         </div>
+         <div class="content">
+            <p class="car-information">
+            Sabor unico
+            </p>
         
-
+            <h2>Hot Dog</h2>
+            <p class="description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati reprehenderit totam, eaque incidunt tempore ea laboriosam et veniam voluptates unde. 
+            </p>
+            <button class="information">
+            Saiba Mais
+            </button>
     </div>
-
 </div>
-<!-- Fim Modal cart-->
+       
+    </div>
 
-<!--Button footer-->
-<footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
-    <button 
-    class="flex items-center gap-2 text-white font-bold"
-    id="cart-btn"
-    >
-        
-        (<span id="cart-count">0</span>)
-        Veja o meu Carrinho
-        <i class="fa fa-cart-plus text-lg text-white"></i>
-    </button>
-</footer>
-<!--FIm do Footer-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="script.js"></script>
-
+    
+    <div class="arrows">
+        <button id="prev"><img src="img/arrow.png" alt="seta-direita"></button>
+        <button id="next"><img src="img/arrow.png" alt="seta-esquerda"></button>
+    </div>
+    
+    <div class="indicators">
+        <div class="number">01</div>
+        <ul>
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+   </section> 
+   
+   <script src="./script.js"></script>
 </body>
 </html>
